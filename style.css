@@ -80,7 +80,14 @@ a {
 .upper-header .top-header .header-left a {
     color: #000000;
 }
-
+.upper-header .header-right{
+    display: flex;
+}
+.upper-header .header-right .social-media-icon i{
+    font-size: 20px;
+    padding-right: 5px;
+    color: #000000;
+}
 .upper-header .header-right .search-box {
     height: 20px;
     display: flex;
@@ -105,7 +112,7 @@ a {
 }
 
 .upper-header .header-right .search-box a .fas {
-    color: #604CC3;
+    color: #ffffff;
     font-size: 15px;
 }
 
@@ -1004,7 +1011,7 @@ marquee {
 .quicklink-menu li a {
     color: #fff;
     line-height: 2;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration:none;
 }
 .social-media {
@@ -1021,8 +1028,9 @@ marquee {
 .quicklink-heading {
     font-size:18px;
     font-weight:bold;
-    color:#fff;
+    color:#000000;
     margin-bottom:10px;
+    text-align: center;
 }
 .get-in-touch {
     list-style:none;
