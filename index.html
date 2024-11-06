@@ -2,965 +2,390 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- font-awomme cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
 
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-
-
+	<title>AdminHub</title>
 </head>
 
 <body>
-    <section class="upper-header">
-        <div class="top-header">
-            <div class="header-left">
-                <a href="#">Raghunathpur </a>
-            </div>
-            <div class="header-right">
-                <div class="social-media-icon">
-                    <a href="./login/index.html"><i class="ri-login-circle-line">login</i></a>
-                    <a href="#"><i class="ri-instagram-line"></i></a>
-                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
-                    <a href="#"><i class="ri-twitter-line"></i></a>
 
-                </div>
-                <div class="search-box">
-                    <input type="text" name="" id="" placeholder="Search...">
-                    <a href="#"><i class="fas fa-search"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!--=============== HEADER ===============-->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav__data">
-                <a href="#" class="nav__logo">
-                    <img src="./assets/img/logo.png" alt="">
-                    <div class="nav-block-name">
-                        <div>
-                            Raghunathpur Block
-                        </div>
-                        <div>Jagatsinghpur</div>
-                    </div>
-                </a>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-house'></i>
+			<span class="text">Raghunathpur Block</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="upload-data.html">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">Set Target</span>
+				</a>
+			</li>
+			<li>
+				<a href="effcience.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Efficiency</span>
+				</a>
+			</li>
+			<li>
+				<a href="taskassignment.html">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Task Assignment</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Message</span>
+				</a>
+			</li>
+			<!-- <li>
+				<a href="#">
+					<i class='bx bxs-group'></i>
+					<span class="text">Team</span>
+				</a>
+			</li> -->
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="../index.html" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'></i>
+			<!-- <a href="#" class="nav-link">Categories</a> -->
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a> -->
+				<div class="right">
+					<div class="assign-duration">
+						<div class="container">
+
+							<span class="text">Weekly</span>
+							<div class="circular-progress-week">
+								<span class="progress-value">0%</span>
+							</div>
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-1</span> -->
+						</div>
+						<div class="container">
+							<span class="text">Monthly</span>
+							<div class="circular-progress-month">
+								<span class="progress-value2">0%</span>
+							</div>
+
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-2</span> -->
+						</div>
+
+						<div class="container">
+
+							<span class="text">Quarterly</span>
+							<div class="circular-progress-quarter">
+								<span class="progress-value3">0%</span>
+							</div>
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-3</span> -->
+						</div>
+
+						<div class="container">
+							<span class="text">Yearly</span>
+							<div class="circular-progress-year">
+								<span class="progress-value4">0%</span>
+							</div>
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-4</span> -->
+						</div>
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+			
+			<ul class="box-info">
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>PMAY</h3>
+						</a>
+						<a href="https://pmaymis.gov.in/" target="_blank"><img src="img/pmay-logo.jpg" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per html">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>NRLM</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/download.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per css">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>CFCA</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/logo.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per javascript">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>PMAY</h3>
+						</a>
+						<a href="https://pmaymis.gov.in/" target="_blank"><img src="img/pmay-logo.jpg" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per html">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>NRLM</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/download.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per css">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>CFCA</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/logo.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per javascript">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				
+				<!-- <li>
+					<img src="img/download.png" alt="" class="bx">
+					<span class="text">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>NRLM</h3>
+						</a>
+						<a href="">
+							<p>Update Data</p>
+						</a>
+					</span>
+				</li> -->
+				<!-- <li>
+					<img src="img/images.jpg" alt="" class="bx">
+					<span class="text">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>Rural Housing</h3>
+						</a>
+						<a href="">
+							<p>Update Data</p>
+						</a>
+					</span>
+				</li> -->
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Task</h3>
+						<i class='bx bx-search'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Scheme Name</th>
+								<th>Task </th>
+								<th>Date </th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									
+									<p>PMAY</p>
+								</td>
+								<td>Upload Data</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>NRLM</p>
+								</td>
+								<td>Upload Data</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>PMAY</p>
+								</td>
+								<td>Upload Image</td>
+								<td>01-10-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>Rural Housing</p>
+								</td>
+								<td>Add Info</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>PMAY</p>
+								</td>
+								<td>Add Details</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Message</h3>
+						<i class='bx bx-plus'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Message-1</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Message-2</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Message-3</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Message-4</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Message-5</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+
+	<script src="script.js"></script>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line nav__burger"></i>
-                    <i class="ri-close-line nav__close"></i>
-                </div>
-            </div>
-
-            <!--=============== NAV MENU ===============-->
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li><a href="#" class="nav__link">Home</a></li>
-                    <li class="dropdown__item">
-                        <div class="nav__link">
-                            About Block <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="history.html" class="dropdown__link">
-                                    History
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="who's-who.html" class="dropdown__link">
-                                    Who's Who
-                                </a>
-                            </li>
-                            <li>
-                                <a href="map_of_block.html" class="dropdown__link">
-                                    Map Of Block
-                                </a>
-                            </li>
-
-                            <!--=============== DROPDOWN SUBMENU ===============-->
-                            <li class="dropdown__subitem">
-                                <div class="dropdown__link">
-                                    Administrative Setup <i class="ri-add-line dropdown__add"></i>
-                                </div>
-
-                                <ul class="dropdown__submenu">
-                                    <li>
-                                        <a href="block.html" class="dropdown__sublink">
-                                            Block
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="gp.html" class="dropdown__sublink">
-                                            Gram Panchayat
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="police.html" class="dropdown__sublink">
-                                            Police
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="revenue_villages.html" class="dropdown__sublink">
-                                            Revenue Villages
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="court.html" class="dropdown__sublink">
-                                            Court
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="constituencies.html" class="dropdown__sublink">
-                                            Constituencies
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="demographic.html" class="dropdown__link">
-                                    Demography
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- <li class="dropdown__item">
-                        <div class="nav__link">
-                            Departments <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-user-line"></i> Health
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-lock-line"></i> Education
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-message-3-line"></i> Agricalture
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-message-3-line"></i> PRDWD
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <li class="dropdown__item">
-                        <div class="nav__link">
-                            Directory <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="government_contact.html" class="dropdown__link">
-                                    Government Contact
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="press&media.html" class="dropdown__link">
-                                    Press & Media
-                                </a>
-                            </li>
-                            <li>
-                                <a href="std&pin.html" class="dropdown__link">
-                                    STD & PIN Codes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="helpline.html" class="dropdown__link">
-                                    Helpline
-                                </a>
-                            </li>
-
-                            <!--=============== DROPDOWN SUBMENU ===============-->
-                            <li class="dropdown__subitem">
-                                <div class="dropdown__link">
-                                    Public Utilities <i class="ri-add-line dropdown__add"></i>
-                                </div>
-
-                                <ul class="dropdown__submenu">
-                                    <li>
-                                        <a href="bank.html" class="dropdown__sublink">
-                                            Bank
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="college.html" class="dropdown__sublink">
-                                            Colleges
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="school.html" class="dropdown__sublink">
-                                            School
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="hospital.html" class="dropdown__sublink">
-                                            Hospitals
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ngo.html" class="dropdown__sublink">
-                                            NGOs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="electricity.html" class="dropdown__sublink">
-                                            Electricity
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="dropdown__item">
-                        <div class="nav__link">
-                            Documents <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="block_env_plan.html" class="dropdown__link">
-                                    Block Environment Plan
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="news.html" class="dropdown__link">
-                                    News
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="rbsk_microplan.html" class="dropdown__link">
-                                    RBSK Microplan
-                                </a>
-                            </li>
-                            <li>
-                                <a href="emergency_plan.html" class="dropdown__link">
-                                    Emergency Plan
-                                </a>
-                            </li>
-                            <li>
-                                <a href="annual_reports.html" class="dropdown__link">
-                                    Annul Reports
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown__item">
-                        <div class="nav__link">
-                            More <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="notice.html" class="dropdown__link">
-                                    Notice
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="tender.html" class="dropdown__link">
-                                    Tenders
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="form.html" class="dropdown__link">
-                                    Form
-                                </a>
-                            </li>
-                            <li>
-                                <a href="rti.html" class="dropdown__link">
-                                    RTI
-                                </a>
-                            </li>
-                            <li>
-                                <a href="media_gallery.html" class="dropdown__link">
-                                    Media Gallery
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <!-- <li><a href="#" class="nav__link">Demography</a></li> -->
-
-                    <!--=============== DROPDOWN 1 ===============-->
-                    <!-- <li class="dropdown__item">
-                        <div class="nav__link">
-                            Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-pie-chart-line"></i> Overview
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-arrow-up-down-line"></i> Transactions
-                                </a>
-                            </li>
-
-                            =============== DROPDOWN SUBMENU ===============
-                            <li class="dropdown__subitem">
-                                <div class="dropdown__link">
-                                    <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
-                                </div>
-
-                                <ul class="dropdown__submenu">
-                                    <li>
-                                        <a href="#" class="dropdown__sublink">
-                                            <i class="ri-file-list-line"></i> Documents
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__sublink">
-                                            <i class="ri-cash-line"></i> Payments
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__sublink">
-                                            <i class="ri-refund-2-line"></i> Refunds
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li> -->
-
-                    <!-- <li><a href="#" class="nav__link">Products</a></li> -->
-
-                    <!--=============== DROPDOWN 2 ===============-->
-                    <!-- <li class="dropdown__item">
-                        <div class="nav__link">
-                            Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-user-line"></i> Profiles
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-lock-line"></i> Accounts
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="ri-message-3-line"></i> Messages
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
-
-                    <!-- <li><a href="#" class="nav__link">Contact</a></li> -->
-                </ul>
-            </div>
-            <div class="nav__data">
-                <a href="#" class="nav__logo">
-                    <img class="cm-img" src="./assets/img/cm-1.png" alt="">
-                </a>
-
-            </div>
-
-        </nav>
-    </header>
-
-    <section class=" hero-bg">
-        <div class="home-banner">
-            <div class="hero">
-                <div class="slider">
-                    <div class="list">
-                        <div class="item">
-                            <img src="./assets/img/slider-1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/img/slider-2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/img/slider-3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/img/slider-4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/img/slider-5.jpg" alt="">
-                        </div>
-                        <!-- <div class="item">
-                            <img src="./assets/img/slider-6.jpg" alt="">
-                        </div> -->
-                    </div>
-                    <div class="buttons">
-                        <button id="prev">
-                            << </button>
-                                <button id="next">>></button>
-                    </div>
-                    <ul class="dots">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="hero-left">
-                <div class="officer-part">
-                    <div class="officer-section">
-                        <div class="officer-img">
-                            <img src="./assets/img/rabi-narayan-naik_0.jpg" alt="">
-                        </div>
-                        <div class="officer-name">
-                            Shri Rabi Narayan Naik
-                        </div>
-                        <div class="officer-designation">
-                            Hon'ble Cabinet Minister
-                        </div>
-                    </div>
-                    <div class="officer-section">
-                        <div class="officer-img">
-                            <img src="./assets/img/images.png" alt="">
-                        </div>
-                        <div class="officer-name">
-                            Shri Rabi Narayan Jethy, OAS(S)
-                        </div>
-                        <div class="officer-designation">
-                            CDO-Cum-EO, ZP Jagatsinghpur
-                        </div>
-                    </div>
-                    <div class="officer-section">
-                        <div class="officer-img">
-                            <img src="./assets/img/images.png" alt="">
-                        </div>
-                        <div class="officer-name">
-                            Jitendra Ku. Nayak, OAS-I(JB)
-                        </div>
-                        <div class="officer-designation">
-                            BDO, Raghunathpur
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- <section>
-        <div class="info-heading">
-            Public information
-        </div>
-        <div class="block-info about-img">
-            <div class="info-content">
-                <h3>100</h3>
-                Revenue Villages
-            </div>
-            <div class="info-content">
-                information
-            </div>
-            <div class="info-content">
-                information
-            </div>
-            <div class="info-content">
-                information
-            </div>
-            <div class="info-content">
-                information
-            </div>
-            <div class="info-content">
-                information
-            </div>
-        </div>
-    </section> -->
-
-
-    <!-- <section>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-content">
-                    <div class="content-heading">
-                        <div class="card-one">
-                            Card One
-                        </div>
-                        <div class="card-data">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus iure totam repellat
-                            vel nihil dignissimos corrupti voluptates? Aspernatur aliquid sequi praesentium iure
-                            voluptatibus atque impedit harum, beatae possimus minus?
-                        </div>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="content-heading">
-                        <div class="card-one">
-                            Card One
-                        </div>
-                        <div class="card-data">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus iure totam repellat
-                            vel nihil dignissimos corrupti voluptates? Aspernatur aliquid sequi praesentium iure
-                            voluptatibus atque impedit harum, beatae possimus minus?
-                        </div>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="content-heading">
-                        <div class="card-one">
-                            Card One
-                        </div>
-                        <div class="card-data">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus iure totam repellat
-                            vel nihil dignissimos corrupti voluptates? Aspernatur aliquid sequi praesentium iure
-                            voluptatibus atque impedit harum, beatae possimus minus?
-                        </div>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
-    <section>
-        <div class="photo-slider">
-            <div class="logo-slider">
-                <div class="item"><a href="https://odishatourism.gov.in/en.html" target="_blank"><img
-                            src="./assets/img/img-slider-1.png" alt=""></a></div>
-                <div class="item"><a href="https://janasunani.odisha.gov.in/" target="_blank"><img
-                            src="./assets/img/img-slider-2.png" alt=""></a></div>
-                <div class="item"><a href="https://odisha.gov.in/" target="_blank"><img
-                            src="./assets/img/img-slider-3.png" alt=""></a></div>
-                <div class="item"><a href="https://missionshakti.odisha.gov.in/" target="_blank"><img
-                            src="./assets/img/img-slider-4.png" alt=""></a></div>
-                <div class="item"><a href="https://www.digitalindia.gov.in/" target="_blank"><img
-                            src="./assets/img/img-slider-5.png" alt=""></a></div>
-                <div class="item"><a href="https://bsky.odisha.gov.in/bsky/home" target="_blank"><img
-                            src="./assets/img/img-slider-6.png" alt=""></a></div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section>
-        <div class="width-100 margin-top-25">
-            <div class="container-2">
-                <div class="width-33 animation">
-                    <div class="latest-news">
-                        <div class="heading-sect">
-                            <h3 class="head-title">Latest New</h3>
-                        </div>
-                        <marquee direction="up" class="scrill-notice">
-                            <ul class="latest-news-ul">
-                                <li> EOI for Krushi Ratha programme in Kharif / Rabi 2024-25 under CDAO Jagatsinghpur
-                                    <img src="./assets/img/latest-news-blink-img.gif"></li>
-                                <li> Tender for hiring of vehicle for official use in Jagatsinghpur Municipality <img
-                                        src="./assets/img/latest-news-blink-img.gif"> </li>
-                                <li> Tender for hiring of vehicle for official use of DLSA Jagatsinghpur <img
-                                        src="./assets/img/latest-news-blink-img.gif">
-                                </li>
-                                <li> Tender for hiring of vehicle for official use of DLSA Jagatsinghpur <img
-                                        src="./assets/img/latest-news-blink-img.gif">
-                                </li>
-                                <li> 31 mar 2022 Session 2019-20 <img src="./assets/img/latest-news-blink-img.gif"></li>
-                                <li> 16 feb 2022 list Part 01_16 feb 2022 <img
-                                        src="./assets/img/latest-news-blink-img.gif"></li>
-                                <li> 16 feb 2022 list Part 02_16 feb 2022 <img
-                                        src="./assets/img/latest-news-blink-img.gif"></li>
-                                <li> "Quotation for displaying of Advertisement within Jagatsinghpur Municipality Area"
-                                    <img src="./assets/img/latest-news-blink-img.gif">
-                                </li>
-                            </ul>
-                        </marquee>
-                    </div>
-                </div>
-
-                <div class="width-33 animation">
-                    <div class="event-list">
-                        <div class="heading-sect">
-                            <h3 class="head-title">Upcoming Events</h3>
-                        </div>
-                        <ul class="upcoming-event-list">
-                            <li><span class="event-date">29 <br>
-                                    April</span><span> Tender for hiring of vehicle for official use in Jagatsinghpur
-                                    Municipality</span> </li>
-                            <li><span class="event-date">30 <br>
-                                    April</span><span> Tender for hiring of vehicle for official use in Jagatsinghpur
-                                    Municipality</span> </li>
-                            <li><span class="event-date">2 <br>
-                                    Mar</span><span> Tender for hiring of vehicle for official use in Jagatsinghpur
-                                    Municipality</span> </li>
-                            <li><span class="event-date">5 <br>
-                                    Mar</span><span> Tender for hiring of vehicle for official use in Jagatsinghpur
-                                    Municipality</span> </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="width-33 animation">
-                    <div class="notice-board">
-                        <div class="heading-sect">
-                            <h3 class="head-title">Notice Board</h3>
-                        </div>
-                        <ul class="notice-board-list">
-                            <li><img src="./assets/img/notice-board-img.png"> Participation in Climate Correction Day
-                                (CCD)
-                                Challenge for Mission LiFE </li>
-                            <li><img src="./assets/img/notice-board-img.png"> West Zone Inter University Table Teniss
-                                (man)
-                                Tournament 2022-23 </li>
-                            <li><img src="./assets/img/notice-board-img.png"> PhD Registration Form for Selected
-                                Candidates
-                            </li>
-                            <li><img src="./assets/img/notice-board-img.png"> List of Activities organised under
-                                TEQIP-III
-                            </li>
-                            <li><img src="./assets/img/notice-board-img.png"> Documents for empanellment of vendor for A
-                                Class
-                                contyractor </li>
-                            <li><img src="./assets/img/notice-board-img.png"> School of Architecture College Level
-                                counselling
-                                2022-23 </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section>
-        <!---------- Recruiter List HTML Starts --------->
-        <div class="width-100 margin-top-50 scroll-bg">
-            <div class="container">
-                <h3 class="recruiter-head-style">Popular Services</h3>
-                <marquee scrollamount="5" style="height: 100px;">
-                    <div class="popular-services">
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/judge.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Magisterials</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/revenue.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Revenue</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/bill.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Bills</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/certificate.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Certificates</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/sams.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>SAMS</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/e-dist.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>E District</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/go-sugam.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Go-Sugam</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/aadhaar.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Aadhaar</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="p-service-data">
-                                <div class="p-s-img">
-                                    <img src="./assets/img/schlarship.png" alt="">
-                                </div>
-                                <div class="p-s-data">
-                                    <span>Scholarship</span>
-                                </div>
-                            </div>
-                        </a>
-
-
-                    </div>
-
-                </marquee>
-            </div>
-        </div>
-        <!---------- Recruiter List HTML Ends --------->
-    </section>
-
-
-
-    <!---------- Information HTML Starts --------->
-    <section class="part">
-        <div class="width-100">
-            <div class="container-2">
-                <div class="width-33 animation">
-                    <div class="our-principal">
-                        <div class="heading-sect">
-                            <h3 class="head-title"> Useful Information</h3>
-                        </div>
-                        <ul class="useful-info-ul">
-                            <li><img src="./assets/img/subhadra.png"> <a href="https://subhadra.odisha.gov.in/"
-                                    target="_blank">Subhadra</a></li>
-                            <li><img src="./assets/img/omail.png"> <a href="https://mail.odisha.gov.in/webmail/"
-                                    target="_blank">OMail</a></li>
-                            <li><img src="./assets/img/odishaone.png"> <a href="https://www.odishaone.gov.in/citizen/"
-                                    target="_blank">Odisha One</a></li>
-                            <li><img src="./assets/img/janasunani.png"> <a href="https://janasunani.odisha.gov.in/"
-                                    target="_blank">Janasunani</a></li>
-                            <!-- <li><img src="./assets/img/edespatch.png"> <a href="#">eDespatch</a></li> -->
-                            <li><img src="./assets/img/epravesh.png"> <a href="https://epravesh.odisha.gov.in/"
-                                    target="_blank">ePravesh</a></li>
-                            <li><img src="./assets/img/tenders.png"> <a href="#">Tender & Advt.</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="width-33 animation">
-                    <div class="about-us">
-                        <div class="heading-sect">
-                            <h3 class="head-title"> Media Gallery</h3>
-                        </div>
-                        <!-- <div class="photo-container">
-                            <div class="gallery-photo">
-                                <div class="column">
-                                    <div class="photo">
-                                        <img src="./assets/img/gallery-1.jpg" alt="">
-                                    </div>
-                                    <div class="photo">
-                                        <img src="./assets/img/gallery-2.jpg" alt="">
-                                    </div>
-                                    <div class="photo">
-                                        <img src="./assets/img/gallery-3.jpeg" alt="">
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="photo">
-                                        <img src="./assets/img/gallery-1.jpg" alt="">
-                                    </div>
-                                    <div class="photo">
-                                        <img src="./assets/img/gallery-2.jpg" alt="">
-                                    </div>
-                                    <div class="photo">
-                                        <img src="./assets/img/gallery-3.jpeg" alt="">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div> -->
-
-                        <div class="grid-wrapper">
-                            <div>
-                                <img src="./assets/img/gallery-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="./assets/img/gallery-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="./assets/img/gallery-3.jpeg" alt="">
-                            </div>
-                            <div>
-                                <img src="./assets/img/gallery-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="./assets/img/gallery-5.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="./assets/img/gallery-6.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="view-button">
-                            <a href="#">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="width-33 animation">
-                    <div class="certificate">
-                        <div class="heading-sect">
-                            <h3 class="head-title"> Social Media</h3>
-                        </div>
-                        <div class="social-media">
-                            <iframe
-                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJagatsinghpurDist%3Fref%3Dembed_page&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                                width="340" height="500" style="border:none;overflow:hidden" scrolling="no"
-                                frameborder="0" allowfullscreen="true"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!---------- Information HTML Ends --------->
-
-
-    <!---------- Footer HTML Starts --------->
-    <div class="width-100 margin-top-50 footer">
-        <div class="container">
-            <div class="width-25">
-                <h2 class="quicklink-heading">Quick Links</h2>
-                <ul class="quicklink-menu">
-                    <li><a href="#">Website Policies</a></li>
-                    <li><a href="#">Disclamer</a></li>
-                    <li><a href="#">Term & Conditions</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="#">help</a></li>
-                </ul>
-            </div>
-            <div class="width-25">
-                <h2 class="quicklink-heading">Helpline</h2>
-
-                <ul class="quicklink-menu">
-
-                    <li>District Emerangency Helpline :-<a href="tel:+91 06724-220368">06724-220368</a></li>
-                    <li> Child Helpline :- <a href="tel: 1098">1098</a></li>
-                    <li> Women Helpline :-<a href="tel: 1091">1091</a></li>
-                    <li> Crime Stopper :-<a href="tel: 1090">1090</a></li>
-                </ul>
-            </div>
-            <div class="width-25">
-                <h2 class="quicklink-heading">Information Link</h2>
-                <ul class="quicklink-menu">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">R&D Policy</a></li>
-                    <!-- <li><a href="#">Anti-Ragging</a></li>
-                    <li><a href="#">Admission</a></li> -->
-                </ul>
-            </div>
-            <div class="width-25">
-                <h2 class="quicklink-heading">GET IN TOUCH</h2>
-                <ul class="get-in-touch">
-                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> E-MAIL:<a href="#" class="footer-e-mail">
-                            trackepay@gmail.com</a></li>
-                    <li><i class="fa fa-headphones" aria-hidden="true"></i> WHATS-APP: +91 8658445706</li>
-                    <li><i class="fa fa-fax" aria-hidden="true"></i> CONTACT NO.: +91 8658445706</li>
-                    <li><i class="fa fa-globe" aria-hidden="true"></i> WEBSITE:<a href="#" class="footer-website">
-                            https://www.trackepay.com</a></li>
-                </ul>
-                <!-- <ul class="social-media">
-                    <li><a href="#"><img src="images/icon-facebook.png"></a></li>
-                    <li><a href="#"><img src="images/icon-twitter.png"></a></li>
-                    <li><a href="#"><img src="images/icon-linkedin.png"></a></li>
-                    <li><a href="#"><img src="images/icon-instagram.png"></a></li>
-                </ul> -->
-            </div>
-        </div>
-    </div>
-    <!---------- Footer HTML Ends --------->
-    <div class="width-100 footer2-bacbor">
-        <p class="footer2-content">Copyright @ 2023, Trackepay. All Rights Reserved</p>
-    </div>
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script>
-        $('.logo-slider').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            Infinity: true
-        });
-    </script>
 </body>
 
 </html>
