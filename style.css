@@ -424,9 +424,10 @@ a {
 }
 
 .hero-bg {
-    background: linear-gradient(90deg, rgba(232, 204, 160, 1) 0%, rgba(227, 92, 9, 1) 43%, rgba(255, 183, 0, 1) 100%);
-    ;
+    /* background: linear-gradient(90deg, rgba(232, 204, 160, 1) 0%, rgba(227, 92, 9, 1) 43%, rgba(255, 183, 0, 1) 100%); */
+    /* #FD7238 */
     /* padding: 15px 50px; */
+    background-image: url(./assets/img/bg.png);
 }
 
 .hero .slider {
@@ -906,7 +907,7 @@ a {
     font-size: 16px;
     font-weight: 600;
     font-family: 'Roboto'
-    sans-serif !important;
+        sans-serif !important;
     color: #2196f3;
     padding-bottom: 5px;
 }
@@ -1086,7 +1087,7 @@ marquee {
     font-weight: bold;
     color: #000000;
     margin-bottom: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .get-in-touch {
@@ -1318,6 +1319,31 @@ td img {
     max-width: 100%;
     height: auto;
 }
-table tr th{
+
+table tr th {
     background-color: #FF9D3D;
+}
+
+.item-list-public-utilities-districts ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+}
+
+.item-list-public-utilities-districts ul li {
+    width: 31%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.click-expand ul{
+    display: none;
+}
+.click-expand:hover ul{
+    display: block;
 }

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>AdminHub</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-house'></i>
+			<span class="text">Raghunathpur Block</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="upload-data.html">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">Set Target</span>
+				</a>
+			</li>
+			<li>
+				<a href="effcience.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Efficiency</span>
+				</a>
+			</li>
+			<li>
+				<a href="taskassignment.html">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Task Assignment</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Message</span>
+				</a>
+			</li>
+			<!-- <li>
+				<a href="#">
+					<i class='bx bxs-group'></i>
+					<span class="text">Team</span>
+				</a>
+			</li> -->
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="../index.html" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'></i>
+			<!-- <a href="#" class="nav-link">Categories</a> -->
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a> -->
+				<div class="right">
+					<div class="assign-duration">
+						<div class="container">
+
+							<span class="text">Weekly</span>
+							<div class="circular-progress-week">
+								<span class="progress-value">0%</span>
+							</div>
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-1</span> -->
+						</div>
+						<div class="container">
+							<span class="text">Monthly</span>
+							<div class="circular-progress-month">
+								<span class="progress-value2">0%</span>
+							</div>
+
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-2</span> -->
+						</div>
+
+						<div class="container">
+
+							<span class="text">Quarterly</span>
+							<div class="circular-progress-quarter">
+								<span class="progress-value3">0%</span>
+							</div>
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-3</span> -->
+						</div>
+
+						<div class="container">
+							<span class="text">Yearly</span>
+							<div class="circular-progress-year">
+								<span class="progress-value4">0%</span>
+							</div>
+							<!-- <span class="text" style="color: rgb(255, 145, 0);">Rank-4</span> -->
+						</div>
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+			
+			<ul class="box-info">
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>PMAY</h3>
+						</a>
+						<a href="https://pmaymis.gov.in/" target="_blank"><img src="img/pmay-logo.jpg" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per html">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>NRLM</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/download.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per css">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>CFCA</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/logo.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per javascript">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>PMAY</h3>
+						</a>
+						<a href="https://pmaymis.gov.in/" target="_blank"><img src="img/pmay-logo.jpg" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per html">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>NRLM</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/download.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per css">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>CFCA</h3>
+						</a>
+						<a href="https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0" target="_blank"><img src="img/logo.png" alt="" class="bx"></a>
+					</div>
+					<div class="skill-box">
+						<div class="skill-bar">
+							<span class="skill-per javascript">
+								<span class="tooltip">90%</span>
+							</span>
+						</div>
+					</div>
+				</li>
+				
+				<!-- <li>
+					<img src="img/download.png" alt="" class="bx">
+					<span class="text">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>NRLM</h3>
+						</a>
+						<a href="">
+							<p>Update Data</p>
+						</a>
+					</span>
+				</li> -->
+				<!-- <li>
+					<img src="img/images.jpg" alt="" class="bx">
+					<span class="text">
+						<a href="https://pmaymis.gov.in/" target="_blank">
+							<h3>Rural Housing</h3>
+						</a>
+						<a href="">
+							<p>Update Data</p>
+						</a>
+					</span>
+				</li> -->
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Task</h3>
+						<i class='bx bx-search'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Scheme Name</th>
+								<th>Task </th>
+								<th>Date </th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									
+									<p>PMAY</p>
+								</td>
+								<td>Upload Data</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>NRLM</p>
+								</td>
+								<td>Upload Data</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>PMAY</p>
+								</td>
+								<td>Upload Image</td>
+								<td>01-10-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>Rural Housing</p>
+								</td>
+								<td>Add Info</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>PMAY</p>
+								</td>
+								<td>Add Details</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Message</h3>
+						<i class='bx bx-plus'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Message-1</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Message-2</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Message-3</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Message-4</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Message-5</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
