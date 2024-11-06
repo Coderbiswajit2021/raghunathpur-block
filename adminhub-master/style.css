@@ -1000,3 +1000,19 @@ body {
   .bx{
 	color: #FD7238;
   }
+
+
+
+  .task-content-status a h3{
+	text-decoration: none;
+	color: #000;
+	padding-bottom: 7px;
+  }
+  .task-content-data li{
+	border: 1px solid rgb(176, 176, 176);
+	height: 100px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .task-content-status a h3:hover{
+	color: #FD7238;
+  }
