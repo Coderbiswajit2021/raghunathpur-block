@@ -686,7 +686,7 @@ body {
 
 #content main .table-data .order table tr td .status {
 	font-size: 10px;
-	padding: 6px 16px;
+	padding: 6px;
 	color: var(--light);
 	border-radius: 20px;
 	font-weight: 700;
@@ -1015,4 +1015,8 @@ body {
   }
   .task-content-status a h3:hover{
 	color: #FD7238;
+  }
+
+  .text-1{
+	font-size: 17px;
   }

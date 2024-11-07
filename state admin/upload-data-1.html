@@ -36,6 +36,12 @@
                 </a>
             </li>
             <li>
+                <a href="create-scheme.html">
+                    <i class='bx bx-file'></i>
+                    <span class="text">Create Scheme</span>
+                </a>
+            </li>
+            <li>
                 <a href="effcience.html">
                     <i class='bx bxs-doughnut-chart'></i>
                     <span class="text">Efficiency</span>
@@ -185,21 +191,19 @@
                         </div> -->
 
                         <div class="column">
-
-                            <div class="input-box">
-                                <label>Target</label>
-                                <input type="text" placeholder="Enter Target" required />
-                            </div>
-                            <div class="input-box">
-                                <label>Deadline Date</label>
-                                <input type="date" placeholder="Enter Deadline Date" required />
-                            </div>
-                        </div>
-                        <div class="column">
                             <div class="input-box">
                                 <label>Select District</label>
                                 <!-- <input type="text" placeholder="Achieved" required /> -->
-                                <select name="" id="" class="input-box">
+                                <select name="" id="" class="input-box" style="position: relative;
+                                height: 50px;
+                                width: 100%;
+                                outline: none;
+                                font-size: 1rem;
+                                color: #707070;
+                                margin-top: 8px;
+                                border: 1px solid #ddd;
+                                border-radius: 6px;
+                                padding: 0 15px;">
                                     <option value="">All</option>
                                     <option value="">Jagatsinghpur</option>
                                     <option value="">Khurdha</option>
@@ -215,7 +219,16 @@
                             <div class="input-box">
                                 <label>Select Block</label>
                                 <!-- <input type="text" placeholder="Enter Funds allocated" required /> -->
-                                <select name="" id="" class="input-box">
+                                <select name="" id="" class="input-box" style="position: relative;
+	height: 50px;
+	width: 100%;
+	outline: none;
+	font-size: 1rem;
+	color: #707070;
+	margin-top: 8px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;">
                                     <option value="">All</option>
                                     <option value="">Raghunathpur</option>
                                     <option value="">Jagarsinghpur</option>
@@ -227,7 +240,23 @@
                                     <option value="">Raygada</option>
                                 </select>
                             </div>
+                            <div class="input-box">
+                                <label>Current Achievement</label>
+                                <input type="text" placeholder="1000" required />
+                            </div>
                         </div>
+                        <div class="column">
+
+                            <div class="input-box">
+                                <label>Target</label>
+                                <input type="text" placeholder="Enter Target" required />
+                            </div>
+                            <div class="input-box">
+                                <label>Deadline Date</label>
+                                <input type="date" placeholder="Enter Deadline Date" required />
+                            </div>
+                        </div>
+
 
 
                         <button>Submit</button>
