@@ -174,3 +174,15 @@ let progress4 = setInterval(() => {
 }, speed4);
 
 
+
+// $(document).ready(function(){
+// 	$('.notification').hover(function()
+// 	{
+// 		$(this).notification().addClass('red');
+// 	},
+// 	function()
+// 	{
+// 		$(this).notification().removeClass('red');
+// 	}
+// );
+// });
