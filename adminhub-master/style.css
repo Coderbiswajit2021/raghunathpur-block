@@ -475,8 +475,8 @@ body {
 	opacity: 0;
 }
 
-.skill-per.css {
-	width: 70%;
+.skill-per.html {
+	width: 90%;
 	animation-delay: 0.1s;
 }
 
@@ -644,6 +644,7 @@ body {
 .table-1 thead{
 	background: #FD7238;
 }
+/* ---------------------------------------------------- */
 
 #content main .table-data .order table th {
 	padding: 15px 5px;

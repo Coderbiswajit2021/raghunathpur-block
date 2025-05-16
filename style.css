@@ -121,7 +121,8 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1220px;
+    /* max-width: 1220px; */
+    max-width: 1450px;
     margin-inline: 1.5rem;
 }
 
@@ -229,7 +230,7 @@ a {
 
 .nav__link {
     color: var(--white-color);
-    background-color: var(--black-color);
+    /* background-color: var(--black-color); */
     font-weight: var(--font-semi-bold);
     padding: 1.25rem 1.5rem;
     display: flex;
