@@ -429,24 +429,12 @@
                     <div>
                         <nav>
                             <ul class="content-list">
-                                <li class="content-list-li"> <a href="">History</a> </li>
-                                <li class="content-list-li"><a href="">Who's Who</a> </li>
-                                <li class="content-list-li"><a href="">Map of Block</a> </li>
-                                <li class="content-list-li click-expand">Administrative Setup<i
-                                        class="ri-arrow-down-s-line dropdown__arrow"></i>
-                                    <ul>
-                                        <li class="content-list-li">Block</li>
-                                        <li class="content-list-li">Tahasil</li>
-                                        <li class="content-list-li">Police</li>
-                                        <li class="content-list-li">Police</li>
-                                        <li class="content-list-li">Revenue Villages</li>
-                                        <li class="content-list-li">Court</li>
-                                        <li class="content-list-li">Constituencies</li>
-                                    </ul>
-                                </li>
-                                <li class="content-list-li">
-                                    Demography
-                                </li>
+                                <li class="content-list-li"> <a href="">Notice</a> </li>
+                                <!-- <li class="content-list-li"><a href="">Tender</a> </li>
+                                <li class="content-list-li"><a href="">Form</a> </li>
+                                <li class="content-list-li"><a href="">RTI</a> </li>
+                                <li class="content-list-li"><a href="">Media Gallery</a> </li> -->
+
                             </ul>
                         </nav>
                     </div>
@@ -458,30 +446,51 @@
                         <main>
                             <section class="main-sec">
                                 <div class="block-page-title-block">
-                                    <h1>History</h1>
+                                    <h1>Inquiry</h1><br>
+
                                 </div>
                                 <div>
                                     <div>
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>Sl. No</th>
-                                                    <th>G.P Name</th>
-                                                    <th>Name of the G.P.O</th>
-                                                    <th>Phone</th>
+                                        
+                                        
+                                        <div 
+                                            style="max-width: 600px; margin: auto; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                                            <h2 style="text-align: center; color: #333;">Inquiry Form</h2>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1 </td>
-                                                    <td>Rayagada </td>
-                                                    <td>Biswajit Sahoo </td>
-                                                    <td>06724-220299 </td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
+                                            <form style="display: flex; flex-direction: column;">
+
+                                                <label for="name" style="margin-top: 10px; font-weight: bold;">Full
+                                                    Name</label>
+                                                <input type="text" id="name" name="name" placeholder="Your name"
+                                                    required
+                                                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+                                                <label for="email"
+                                                    style="margin-top: 10px; font-weight: bold;">Email</label>
+                                                <input type="email" id="email" name="email" placeholder="Your email"
+                                                    required
+                                                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+                                                <label for="phone" style="margin-top: 10px; font-weight: bold;">Phone
+                                                    Number</label>
+                                                <input type="tel" id="phone" name="phone"
+                                                    placeholder="Your phone number"
+                                                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+                                                <label for="message"
+                                                    style="margin-top: 10px; font-weight: bold;">Message</label>
+                                                <textarea id="message" name="message"
+                                                    placeholder="Type your message here..." rows="5"
+                                                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+                                                <button type="submit"
+                                                    style="margin-top: 20px; padding: 12px; background-color: #FF9D3D; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                                                    Submit
+                                                </button>
+                                            </form>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </section>
